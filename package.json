@@ -4,7 +4,7 @@
   "description": "Tutorial 3",
   "main": "server.js",
   "scripts": {
-    "test": "Mocha",
+    "test": "App.test.js",
     "start": "nodemon backend/server.js"
   },
   "author": "Juwon",
