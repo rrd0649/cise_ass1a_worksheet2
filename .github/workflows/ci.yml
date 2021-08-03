@@ -10,8 +10,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    env:
-        working-directory: ./frontend
 
     strategy:
       matrix:
@@ -28,13 +26,13 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      working-directory: ${{env.working-directory}}
+  
 
     - name: Run the tests
-      run: npm run test --prefix /frontend
-      working-directory: ${{env.working-directory}}
+      run: npm run test --prefix ./frontend
+      
 
     - name: Build
-      run: npm run build --prefix /frontend
-      working-directory: ${{env.working-directory}}
+      run: npm run build --prefix ./frontend
+    
 
