@@ -33,10 +33,10 @@ jobs:
   
 
     - name: Run the tests
-      run: npm run test --prefix /frontend
+      run: npm run test --prefix frontend
       
 
     - name: Build
-      run: npm run build --prefix /frontend
+      run: npm run build --prefix frontend
     
 
