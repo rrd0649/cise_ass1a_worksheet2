@@ -11,9 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    deaults:
+    defaults:
       run:
-        working-directory: web
+        working-directory: scripts
 
     strategy:
       matrix:
